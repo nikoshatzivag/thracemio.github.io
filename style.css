@@ -99,6 +99,10 @@ html {
 
 /* ######################## CODE STARTS HERE!####################### */
 
+/* ##################################################################### */
+/*                              DESKTOP                                  */
+/* ##################################################################### */
+
 /* ############ Code for the Title ############# */
 
 .title {
@@ -114,7 +118,7 @@ html {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-areas: 
-	". titleLogo  titleText .";
+	". titleLogo titleText .";
 }
 
 .title a {
@@ -137,6 +141,7 @@ html {
 	width: 200px;
 }
 
+/* ############## CODE FOR THE MENU ################ */
 .menu {	
 	background-color: #7fb3dd;
 	margin-top: 250px;
@@ -147,6 +152,7 @@ html {
 	grid-template-areas: 
 	". sub1 . sub2 . sub3 . sub4 . sub5 . sub6 . sub7 .";
 }
+
 
 .sub1 {
 	grid-area: sub1;
@@ -273,3 +279,44 @@ html {
 }
 
 .sub7:hover .news {color: #338dd5;}
+
+
+/* ##################################################################### */
+/*                                MOBILE                                 */
+/* ##################################################################### */
+
+
+@media only screen and (max-width: 824px) {
+	/* ############ code for the title ###############*/
+	.title {
+		position: absolute;
+	}
+	.titleLink {
+		grid-template-rows: 100px;
+		grid-template-areas: 
+		"titleLogo"
+		"titleText";
+	}
+	.titleLogo {
+		justify-self: center;
+	}
+	.titleText {
+		justify-self: center;
+		font-size: 50px;
+	}
+	/* code for the menu */
+	.menu {
+		grid-template-rows: 5px;
+		grid-template-areas:
+		"."
+		"sub1"
+		"sub2"
+		"sub3"
+		"sub4"
+		"sub5"
+		"sub6"
+		"sub7"
+		".";
+	}
+	
+}
