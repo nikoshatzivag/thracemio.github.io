@@ -1,0 +1,260 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+	body{
+	line-height: 1;
+}
+
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+	nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+	/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+	/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+	/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;  
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* ######################## CODE STARTS HERE!####################### */
+
+/* ############ Code for the Title ############# */
+
+.title {
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    background-color: #0072d4;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.titleText {
+    margin-top: 60px;
+    font-size: 100px;
+    color: white;
+    font-family: 'Times New Roman';
+
+}
+
+.menu {	
+	/* background-color: #eeeeee; */
+	margin-top: 250px;
+	display: grid;
+	grid-auto-rows: 100px;
+	align-items: center;
+	grid-template-columns: auto;
+	grid-template-areas: 
+	". sub1 . sub2 . sub3 . sub4 . sub5 . sub6 . sub7 .";
+}
+
+.sub1 {
+	grid-area: sub1;
+	justify-self: center;
+}
+
+.about {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.sub1:hover .dropdown-content { display: block; }
+.sub1:hover .about {color: #338dd5;}
+
+.sub2 {
+	grid-area: sub2;
+	justify-self: center;
+}
+
+.mio {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+
+.sub2:hover .dropdown-content { display: block; }
+.sub2:hover .mio {color: #338dd5;}
+
+.sub3 {
+	grid-area: sub3;
+	justify-self: center;
+}
+
+.apply {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.sub3:hover .apply {color: #338dd5;}
+
+.sub4 {
+	grid-area: sub4;
+	justify-self: center;
+}
+
+.message {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.sub4:hover .message {color: #338dd5;}
+
+.sub5 {
+	grid-area: sub5;
+	justify-self: center;
+}
+
+.guide {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.sub5:hover .dropdown-content { display: block; }
+.sub5:hover .guide {color: #338dd5;}
+
+.sub6 {
+	grid-area: sub6;
+	justify-self: center;
+}
+
+.contact {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.sub6:hover .contact {color: #338dd5;}
+
+.sub7 {
+	grid-area: sub7;
+	justify-self: center;
+}
+
+.news {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.sub7:hover .news {color: #338dd5;}
