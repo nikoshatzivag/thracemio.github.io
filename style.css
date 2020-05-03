@@ -102,28 +102,43 @@ html {
 /* ############ Code for the Title ############# */
 
 .title {
-    position: fixed;
-    top: 0px;
-    text-align: center;
-    width: 100%;
-    height: 250px;
-    background-color: #0072d4;
+	position: fixed;
+	top: 0px;
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	background-color: #3491e2;
+}
+
+.titleLink {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: 
+	". titleLogo  titleText .";
 }
 
 .title a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .titleText {
-    margin-top: 60px;
-    font-size: 100px;
-    color: white;
-    font-family: 'Times New Roman';
+	grid-area: titleText;
+	justify-self: start;
+	margin-top: 60px;
+	font-size: 100px;
+	color: white;
+	font-family: 'Times New Roman';
 
 }
 
+.titleLogo {
+	grid-area: titleLogo;
+	justify-self: end;
+	width: 200px;
+}
+
 .menu {	
-	/* background-color: #eeeeee; */
+	background-color: #7fb3dd;
 	margin-top: 250px;
 	display: grid;
 	grid-auto-rows: 100px;
@@ -139,7 +154,7 @@ html {
 }
 
 .about {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
@@ -172,7 +187,7 @@ html {
 }
 
 .mio {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
@@ -189,7 +204,7 @@ html {
 }
 
 .apply {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
@@ -204,7 +219,7 @@ html {
 }
 
 .message {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
@@ -219,7 +234,7 @@ html {
 }
 
 .guide {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
@@ -235,7 +250,7 @@ html {
 }
 
 .contact {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
@@ -250,7 +265,7 @@ html {
 }
 
 .news {
-	background-color: white;
+	background-color: #7fb3dd;
 	color: black;
 	padding: 16px;
 	font-size: 16px;
