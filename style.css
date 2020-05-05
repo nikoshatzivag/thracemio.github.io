@@ -136,9 +136,14 @@ html {
 }
 
 .titleLogo {
+	margin-top: 25px;
 	grid-area: titleLogo;
 	justify-self: end;
 	width: 200px;
+}
+
+.topnav {
+	display: none;
 }
 
 /* ############## CODE FOR THE MENU ################ */
@@ -301,11 +306,46 @@ html {
 		justify-self: center;
 	}
 	.titleText {
+		margin-top: 90px;
 		justify-self: center;
 		font-size: 50px;
 	}
-	/* code for the menu */
+
+	.topnav {
+		display: block;
+	}
+
+	.topnav #mobile {
+		display: none;
+	}
+
+	.topnav #mobile a {
+		color: black;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+		position: relative;
+	}
+	  
+	  /* Style the hamburger menu */
+	.topnav a.icon {
+		padding: 14px 16px;
+		color: white;
+		background: #338dd5;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 	.menu {
+		display: none;
+	}
+
+	.topnav #mobile {
+		background-color: #7fb3dd;
+		margin-top: 250px;
 		grid-template-rows: 5px;
 		grid-template-areas:
 		"."
@@ -318,5 +358,8 @@ html {
 		"sub7"
 		".";
 	}
+
+	/* code for the menu */
+	
 	
 }
