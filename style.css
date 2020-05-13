@@ -108,11 +108,12 @@ body {
 	align-items: center;
 	/* grid-template-rows: auto; */
 	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 	"title title title"
 	"menu menu menu"
-	"apply_section apply_section apply_section";
+	"apply_section apply_section apply_section"
+	". news-section .";
 }
 
 /* ############ Code for the Title ############# */
@@ -345,6 +346,19 @@ body {
 	transition-duration: 0.2s;
 }
 
+
+.news-section {
+	grid-area: news-section;
+	height: 600px;
+	/* background-color: rgb(211, 239, 255); */
+	/* background-image: url("pics/O8kqgGPiGr.png"); */
+	background-repeat: no-repeat;
+	background-position: right;
+	justify-content: center;
+	/* background-position: center; */
+	
+}
+
 /* ##################################################################### */
 /* #                              MOBILE                               # */
 /* ##################################################################### */
@@ -356,38 +370,45 @@ body {
 	align-items: center;
 	/* grid-template-rows: auto; */
 	grid-template-columns: auto;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 	"title"
-	"menu"
-	"apply_section";
+	"topnav"
+	"apply_section"
+	"news-section";
 }
 	.title {
+		height: 150px;
+		grid-area: title;
 		position: absolute;
 	}
 	.titleLink {
-		grid-template-rows: 100px;
+		/* grid-area: title; */
+		grid-template-rows: 70px;
+		grid-template-columns: auto auto;
 		grid-template-areas: 
-		"titleLogo"
-		"titleText";
+		"titleLogo titleText";
 	}
 	.titleLogo {
-		justify-self: center;
+		margin-top: 40px;
+		width: 90px;
+		justify-self: left;
 	}
 	.titleText {
-		margin-top: 90px;
+		margin-top: 60px;
 		justify-self: center;
 		/* font-size: 50px; */
 	}
 	.titleText h1 {
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	.titleText h4 {
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.topnav {
+		grid-area: title;
 		display: block;
 	}
 
@@ -420,9 +441,10 @@ body {
 	}
 
 	.topnav #mobile {
+		grid-area: topnav;
 		position: relative;
 		background-color: #7fb3dd;
-		margin-top: 250px;
+		margin-top: 150px;
 		grid-template-rows: 5px;
 		grid-template-columns: auto;
 		grid-template-areas:
@@ -439,6 +461,7 @@ body {
 
 	/* code for the menu */
 	/* .apply_section {
-		margin-top: 200px;
+		margin-top: 250px;
+		height: 250px;
 	} */
 }
