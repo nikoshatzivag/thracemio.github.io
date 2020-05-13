@@ -139,6 +139,10 @@ body {
 	text-decoration: none;
 }
 
+.icon {
+	display: none;
+}
+
 .titleText{
 	grid-area: titleText;
 	justify-self: start;
@@ -354,16 +358,17 @@ body {
 body {
 	display: grid;
 	align-items: center;
-	/* grid-template-rows: auto; */
 	grid-template-columns: auto;
-	grid-template-rows: auto auto auto;
+	grid-auto-rows: auto;
 	grid-template-areas:
 	"title"
-	"menu"
+	"topnav"
 	"apply_section";
 }
 	.title {
+		grid-area:title;
 		position: absolute;
+		justify-self: center;
 	}
 	.titleLink {
 		grid-template-rows: 100px;
@@ -405,7 +410,7 @@ body {
 	}
 	  
 	  /* Style the hamburger menu */
-	.topnav a.icon {
+	.icon {
 		padding: 14px 16px;
 		color: white;
 		background: #338dd5;
@@ -415,11 +420,16 @@ body {
 		top: 0;
 	}
 
+	.icon :hover .apply_section {
+		margin-top: 0;
+	}
+
 	.menu {
 		display: none;
 	}
 
 	.topnav #mobile {
+		grid-area: topnav;
 		position: relative;
 		background-color: #7fb3dd;
 		margin-top: 250px;
@@ -438,7 +448,8 @@ body {
 	}
 
 	/* code for the menu */
-	/* .apply_section {
-		margin-top: 200px;
-	} */
+	.apply_section {
+		grid-area: apply_section;
+		margin-top: 250px;
+	}
 }
