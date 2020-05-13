@@ -103,36 +103,57 @@ html {
 /* #                            DESKTOP                                # */
 /* ##################################################################### */
 
+body {
+	display: grid;
+	align-items: center;
+	/* grid-template-rows: auto; */
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+	"title title title"
+	"menu menu menu"
+	"apply_section apply_section apply_section";
+}
+
 /* ############ Code for the Title ############# */
 
 .title {
-	position: fixed;
+	grid-area: title;
 	top: 0px;
 	text-align: center;
 	width: 100%;
-	height: 250px;
+	height: 0px;
 	background-color: #ffffff;
 }
 
 .titleLink {
 	display: grid;
-	grid-template-columns: auto;
+	grid-template-columns: auto auto 10px auto auto;
+	grid-template-rows: auto auto;
 	grid-template-areas: 
-	". titleLogo titleText .";
+	". titleLogo . titleText ."
+	". titleLogo . titleText .";
 }
 
 .title a {
 	text-decoration: none;
 }
 
-.titleText {
+.titleText{
 	grid-area: titleText;
 	justify-self: start;
 	margin-top: 60px;
-	font-size: 100px;
-	color: #428FDE;
-	font-family: 'Times New Roman';
+}
 
+.titleText h1 {
+	font-size: 90px;
+	color: #0D125C;
+	font-family: 'Times New Roman';
+}
+.titleText h4 {
+	font-size: 35px;
+	color: #0D125C;
+	font-family: 'Times New Roman';
 }
 
 .titleLogo {
@@ -142,12 +163,18 @@ html {
 	width: 200px;
 }
 
+
 .topnav {
 	display: none;
 }
 
 /* ############## CODE FOR THE MENU ################ */
-.menu {	
+.menu {
+	grid-area: menu;
+	list-style-type: none;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
 	background-color: #7fb3dd;
 	margin-top: 250px;
 	display: grid;
@@ -157,7 +184,6 @@ html {
 	grid-template-areas: 
 	". sub1 . sub2 . sub3 . sub4 . sub5 . sub6 . sub7 .";
 }
-
 
 .sub1 {
 	grid-area: sub1;
@@ -286,13 +312,56 @@ html {
 .sub7:hover .news {color: #338dd5;}
 
 
+.apply_section {
+	grid-area: apply_section;
+	/* grid-area: apply; */
+	/* position: relative; */
+	height: 450px;
+	background-image: url("pics/front_page/Europe-flags.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.apply_button_in_section {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	font-size: 45px;
+	padding: 15px 30px;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.596);
+	color: black;
+	border: rgba(16, 219, 226, 0.5);
+	border-radius: 25px;
+	display: inline-block;
+}
+
+.apply_button_in_section:hover {
+	background-color: white;
+	font-size: 48px;
+	transition: ease;
+	transition-duration: 0.2s;
+}
+
 /* ##################################################################### */
 /* #                              MOBILE                               # */
 /* ##################################################################### */
-
-
 @media only screen and (max-width: 824px) {
 	/* ############ code for the title ###############*/
+
+body {
+	display: grid;
+	align-items: center;
+	/* grid-template-rows: auto; */
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+	"title"
+	"menu"
+	"apply_section";
+}
 	.title {
 		position: absolute;
 	}
@@ -308,7 +377,14 @@ html {
 	.titleText {
 		margin-top: 90px;
 		justify-self: center;
-		font-size: 50px;
+		/* font-size: 50px; */
+	}
+	.titleText h1 {
+		font-size: 40px;
+	}
+
+	.titleText h4 {
+		font-size: 20px;
 	}
 
 	.topnav {
@@ -344,9 +420,11 @@ html {
 	}
 
 	.topnav #mobile {
+		position: relative;
 		background-color: #7fb3dd;
 		margin-top: 250px;
 		grid-template-rows: 5px;
+		grid-template-columns: auto;
 		grid-template-areas:
 		"."
 		"sub1"
@@ -360,6 +438,7 @@ html {
 	}
 
 	/* code for the menu */
-	
-	
+	/* .apply_section {
+		margin-top: 200px;
+	} */
 }
