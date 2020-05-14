@@ -274,27 +274,31 @@ body {
 /* #########  APPLY SECTION  ########## */
 .apply_section {
 	grid-area: apply_section;
-	/* grid-area: apply; */
-	/* position: relative; */
 	height: 450px;
 	background-image: url("pics/front_page/Europe-flags.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	justify-content: center;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	grid-template-areas:
+	"."
+	"button"
+	".";
 }
 .apply_button_in_section {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
+	grid-area: button;
+	height: fit-content;
 	font-size: 45px;
 	padding: 15px 30px;
 	text-decoration: none;
-	background-color: rgba(255, 255, 255, 0.596);
+	background-color: rgba(255, 255, 255, 0.788);
 	color: black;
-	border: rgba(16, 219, 226, 0.5);
+	font-family: sans-serif;
 	border-radius: 25px;
 	display: inline-block;
+
 }
 .apply_button_in_section:hover {
 	background-color: white;
@@ -326,14 +330,16 @@ body {
 	margin-bottom: 20px;
 	color: #0D125C;
 	font-size: 30px;
-	font-family: 'Times New Roman';
+	font-family: sans-serif;
 }
 .news-section h2 {
 	font-size: 30px;
+	font-family: sans-serif;
 	color: white;
 }
 .news-section p {
 	font-size: 30px;
+	font-family: sans-serif;
 	color: white;
 }
 /* Grid look of the latest 3 news */
@@ -462,7 +468,7 @@ body {
 	.apply_section {
 		height: 400px;
 	}
-	
+
 /* ############  NEWS MOBILE  ########## */
 	.news-section {
 		grid-area: news-section;
