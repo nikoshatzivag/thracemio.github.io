@@ -99,11 +99,11 @@ body {
 	"title"
 	"menu"
 	"apply_section"
-	"news-section";
+	"news-section"
+	"footer";
 }
 
-/* ############ Code for the Title ############# */
-
+/* ############  Title  ############# */
 .title {
 	grid-area: title;
 	top: 0px;
@@ -131,7 +131,6 @@ body {
 	justify-self: start;
 	margin-top: 60px;
 }
-
 .titleText h1 {
 	font-size: 90px;
 	color: #0D125C;
@@ -142,7 +141,7 @@ body {
 	color: #0D125C;
 	font-family: 'Times New Roman';
 }
-
+/* logo */
 .titleLogo {
 	margin-top: 25px;
 	grid-area: titleLogo;
@@ -169,12 +168,10 @@ body {
 	grid-template-areas: 
 	". sub1 . sub2 . sub3 . sub4 . sub5 . sub6 . sub7 .";
 }
-
 .sub1 {
 	grid-area: sub1;
 	justify-self: center;
 }
-
 .about {
 	background-color: #7fb3dd;
 	color: black;
@@ -182,7 +179,6 @@ body {
 	font-size: 16px;
 	border: none;
 }
-
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -273,10 +269,9 @@ body {
 	font-size: 16px;
 	border: none;
 }
-
 .sub7:hover .news {color: #338dd5;}
 
-
+/* #########  APPLY SECTION  ########## */
 .apply_section {
 	grid-area: apply_section;
 	/* grid-area: apply; */
@@ -308,19 +303,60 @@ body {
 	transition-duration: 0.2s;
 }
 
-
+/* #############  NEWS SECTION  ############## */
 .news-section {
 	grid-area: news-section;
-	height: 600px;
-	/* background-color: rgb(211, 239, 255); */
-	/* background-image: url("pics/O8kqgGPiGr.png"); */
-	background-repeat: no-repeat;
-	background-position: right;
-	justify-content: center;
-	width: 50%;
+	margin-top: 40px;
+	display: grid;
+	width: 1000px;
 	justify-self: center;
-	/* background-position: center; */
-	
+	grid-template-rows: auto auto 20px auto 20px auto;
+	grid-template-areas:
+	"news-header"
+	"new1"
+	"."
+	"new2"
+	"."
+	"new3";
+}
+/* News text settings */
+.news-section h1 {
+	grid-area: news-header;
+	justify-self: center;
+	margin-bottom: 20px;
+	color: #0D125C;
+	font-size: 30px;
+	font-family: 'Times New Roman';
+}
+.news-section h2 {
+	font-size: 30px;
+	color: white;
+}
+.news-section p {
+	font-size: 30px;
+	color: white;
+}
+/* Grid look of the latest 3 news */
+.news1 {
+	grid-area: new1;
+	background-color: rgb(29, 134, 175);
+	height: 90px;
+}
+.news2 {
+	grid-area: new2;
+	background-color: rgb(29, 134, 175);
+	height: 90px;
+}
+.news3 {
+	grid-area: new3;
+	background-color: rgb(29, 134, 175);
+	height: 90px;
+}
+
+/* ##########  FOOTER  ######### */
+.footer {
+	grid-area: footer;
+	height: 200px;
 }
 
 /* ##################################################################### */
@@ -332,43 +368,40 @@ body {
 	body {
 		display: grid;
 		align-items: center;
-		grid-template-columns: auto;
-		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
 		grid-template-areas:
 		"title"
 		"topnav"
 		"apply_section"
-		"news-section";
+		"news-section"
+		"footer";
 	}
-
+/* #########  TITLE MOBILE  ######## */
 	.title {
-		height: 150px;
 		grid-area: title;
-		position: absolute;
-	}
-	.titleLink {
-		grid-template-rows: 70px;
-		grid-template-columns: auto auto;
-		grid-template-areas: 
-		"titleLogo titleText";
+		height: 140px;
+		position: relative;
 	}
 	.titleLogo {
 		margin-top: 40px;
+		margin-left: 5px;
 		width: 90px;
-		justify-self: left;
+		justify-self: end;
 	}
 	.titleText {
 		margin-top: 60px;
-		justify-self: center;
+		margin-right: 5px;
+		justify-self: start1;
 	}
 	.titleText h1 {
-		font-size: 35px;
+		font-size: 30px;
 	}
 	.titleText h4 {
-		font-size: 15px;
+		font-size: 14px;
 	}
+/* #########  TOPNAV MOBILE  ######## */
 	.topnav {
-		grid-area: title;
 		display: block;
 	}
 	.topnav #mobile {
@@ -380,8 +413,8 @@ body {
 		text-decoration: none;
 		font-size: 17px;
 		display: block;
-		position: relative;
-	} 
+		/* position: relative; */
+	}
 	/* Style the hamburger menu */
 	.topnav a.icon {
 		padding: 14px 16px;
@@ -395,13 +428,16 @@ body {
 	.menu {
 		display: none;
 	}
+	.topnav {
+		justify-content: left;
+	}
 	.topnav #mobile {
 		grid-area: topnav;
 		position: relative;
 		background-color: #7fb3dd;
-		margin-top: 150px;
+		justify-content: center;
 		grid-template-rows: 5px;
-		grid-template-columns: auto;
+		grid-template-columns: 300px;
 		grid-template-areas:
 		"."
 		"sub1"
@@ -413,10 +449,23 @@ body {
 		"sub7"
 		".";
 	}
+	#mobile {
+		justify-items: left;
+	}
+	.sub1, .sub2, .sub3, .sub4, .sub5, .sub6, .sub7 {
+		justify-self: left;
+		justify-content: start;
+	}
+	
 
-	/* code for the menu */
-	/* .apply_section {
-		margin-top: 250px;
-		height: 250px;
-	} */
+/* #########  APPLY SECTION MOBILE  ######## */
+	.apply_section {
+		height: 400px;
+	}
+	
+/* ############  NEWS MOBILE  ########## */
+	.news-section {
+		grid-area: news-section;
+		width: 95%;
+	}
 }
