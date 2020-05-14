@@ -377,6 +377,7 @@ body {
 	"apply_section"
 	"news-section";
 }
+
 	.title {
 		height: 150px;
 		grid-area: title;
