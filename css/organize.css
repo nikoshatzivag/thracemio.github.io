@@ -44,11 +44,11 @@ body {
 /* ##################################################################### */
 /* #                              MOBILE                               # */
 /* ##################################################################### */
-/* @media only screen and (max-width: 824px) {
+@media only screen and (max-width: 824px) {
 	.content {
+		grid-area: box3;
 		width: 95%;
 		margin-left: 5px;
-		background-color: lightslategrey;
 	}
 	.text {
 		width: 100%;
@@ -58,6 +58,6 @@ body {
 		font-size: 20px;
 	}
 	.text p {
-		font-size: 30px;
+		font-size: 10px;
 	}
-} */
+}
