@@ -21,6 +21,7 @@ body {
 }
 
 .pageTitle {
+	margin-top: 20px;
 	font-size: 50px;
 	justify-self: center;
 	font-family: 'Times New Roman';
@@ -32,7 +33,7 @@ body {
 }
 
 .text h2 {
-	margin-top: 20px;
+	margin-top: 30px;
 	font-size: 30px;
 	margin-bottom: 20px;
 	text-decoration: underline;
@@ -41,7 +42,7 @@ body {
 	margin-left: 20px;
 	font-size: 20px;
 	font-style: italic;
-	padding: 2px;
+	padding: 5px;
 }
 .text em {
 	font-weight: bold;
