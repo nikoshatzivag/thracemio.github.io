@@ -14,10 +14,9 @@
 } */
 .content {
 	grid-area: apply_section;
-	width: 100%;
+	width: 1200px;
 	height: 1500px;
-	
-	/* background-color: grey; */
+	background-color: grey;
 	justify-self: center;
 }
 
@@ -52,9 +51,11 @@
 /* ##################################################################### */
 /* #                              MOBILE                               # */
 /* ##################################################################### */
-/* @media only screen and (max-width: 824px) {
+@media only screen and (max-width: 824px) {
 	.content {
 		width: 100%;
+		margin-left: 5px;
+		background-color: lightslategrey;
 	}
 	.text {
 		width: 100%;
@@ -63,4 +64,7 @@
 	.text h2 {
 		font-size: 20px;
 	}
-} */
+	.text p {
+		font-size: 30px;
+	}
+}
