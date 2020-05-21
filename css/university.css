@@ -15,7 +15,7 @@ body {
 .content {
 	grid-area: content;
 	width: 1200px;
-	height: 1500px;
+	height: 2500px;
 	/* background-color: grey; */
 	justify-self: center;
 }
@@ -38,7 +38,7 @@ body {
 .part1 {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 600px 30px 1fr;
+    grid-template-columns: 1fr 30px 1fr;
 	grid-template-rows: auto;
 	grid-template-areas:
 	"pic1 . text1";
@@ -70,7 +70,7 @@ body {
 
 .part3 {
     display: grid;
-    grid-template-columns: 1fr 30px 600px;
+    grid-template-columns: 1fr 30px 1fr;
 	grid-template-rows: auto;
 	grid-template-areas:
 	"text3 . pic2";
@@ -120,14 +120,14 @@ body {
 .part5 {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 600px 30px 1fr;
+    grid-template-columns: 1fr 30px 1fr;
 	grid-template-rows: auto;
 	grid-template-areas:
 	"pic3 . text6";
 }
 
 .text6 {
-    /* margin-top: 10px; */
+    margin-top: 80px;
     grid-area: text6;
     font-family: 'Times New Roman';
     font-size: 25px;
@@ -138,6 +138,32 @@ body {
 
 .pic3 {
     grid-area: pic3;
+    /* margin-top: 50px; */
+    width: 600px;
+    height: auto;
+}
+
+.part6 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"text7 . pic4";
+}
+
+.text7 {
+    margin-top: 80px;
+    grid-area: text7;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+
+.pic4 {
+    grid-area: pic4;
     /* margin-top: 50px; */
     width: 600px;
     height: auto;
