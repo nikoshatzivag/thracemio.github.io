@@ -122,6 +122,10 @@ body {
 	". titleLogo . titleText .";
 }
 
+.icon {
+	display: none;
+}
+
 .title a {
 	text-decoration: none;
 }
@@ -425,7 +429,7 @@ body {
 		/* position: relative; */
 	}
 	/* Style the hamburger menu */
-	.topnav a.icon {
+	.icon {
 		padding: 14px 16px;
 		color: white;
 		background: #338dd5;
