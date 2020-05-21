@@ -1,0 +1,190 @@
+/* ##################################################################### */
+/* #                            DESKTOP                                # */
+/* ##################################################################### */
+/* body {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"box1"
+	"box2"
+	"box3"
+	"box4";
+} */
+body {
+    background-color: rgb(232, 238, 247);
+}
+.content {
+	grid-area: box3;
+    width: 1200px;
+    justify-content: center;
+	/* height: 2500px; */
+	/* background-color: grey; */
+	justify-self: center;
+}
+
+.pageTitle {
+	margin-top: 20px;
+	font-size: 50px;
+	justify-self: center;
+	font-family: 'Times New Roman';
+	text-align: center;
+}
+
+.content h2 {
+	margin-top: 30px;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+.part1 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"pic1 . text1";
+}
+
+.text1 {
+    margin-top: 10px;
+    grid-area: text1;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+
+.pic1 {
+    grid-area: pic1;
+    /* margin-top: 50px; */
+    width: 600px;
+    height: auto;
+}
+
+.text2 {
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+.part3 {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"text3 . pic2";
+}
+
+.text3 {
+    grid-area: text3;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: left;
+}
+
+
+.pic2 {
+    margin-top: 30px;
+    grid-area: pic2;
+    /* margin-top: 50px; */
+    width: 600px;
+    height: auto;
+}
+
+.part4 {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"text4 . text5";
+}
+
+.text4 {
+    grid-area: text4;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: left;
+}
+
+.text5 {
+    grid-area: text5;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: left;
+}
+
+.part5 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"pic3 . text6";
+}
+
+.text6 {
+    margin-top: 80px;
+    grid-area: text6;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+
+.pic3 {
+    grid-area: pic3;
+    /* margin-top: 50px; */
+    width: 600px;
+    height: auto;
+}
+
+.part6 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"text7 . pic4";
+}
+
+.text7 {
+    margin-top: 80px;
+    grid-area: text7;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    /* padding: 10px; */
+    text-align: justify;
+}
+
+
+.pic4 {
+    grid-area: pic4;
+    /* margin-top: 50px; */
+    width: 600px;
+    height: auto;
+}
+
+/* ##################################################################### */
+/* #                              MOBILE                               # */
+/* ##################################################################### */
+@media only screen and (max-width: 824px) {
+	.content {
+		width: 100%;
+	}
+	.text {
+		width: 100%;
+		padding: 5px;
+	}
+	.text h2 {
+		font-size: 20px;
+	}
+}

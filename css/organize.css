@@ -1,22 +1,15 @@
 /* ##################################################################### */
 /* #                            DESKTOP                                # */
 /* ##################################################################### */
-/* body {
-	display: grid;
-	align-items: center;
-	grid-template-columns: 100%;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"title"
-	"menu"
-	"topnav"
-	"content";
-} */
+body {
+    background-color: rgb(232, 238, 247);
+}
+
 .content {
-	grid-area: apply_section;
+	grid-area: box3;
 	width: 1200px;
 	height: 1500px;
-	background-color: grey;
+	/* background-color: rgb(226, 225, 225); */
 	justify-self: center;
 }
 
@@ -51,9 +44,9 @@
 /* ##################################################################### */
 /* #                              MOBILE                               # */
 /* ##################################################################### */
-@media only screen and (max-width: 824px) {
+/* @media only screen and (max-width: 824px) {
 	.content {
-		width: 100%;
+		width: 95%;
 		margin-left: 5px;
 		background-color: lightslategrey;
 	}
@@ -67,4 +60,4 @@
 	.text p {
 		font-size: 30px;
 	}
-}
+} */

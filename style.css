@@ -9,16 +9,16 @@ body {
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
-	"title"
-	"menu"
-	"apply_section"
-	"news-section"
-	"footer";
+	"box1"
+	"box2"
+	"box3"
+	"box4"
+	"box5";
 }
 
 /* ############  Title  ############# */
 .title {
-	grid-area: title;
+	grid-area: box1;
 	top: 0px;
 	text-align: center;
 	width: 100%;
@@ -72,7 +72,7 @@ body {
 
 /* ############## CODE FOR THE MENU ################ */
 .menu {
-	grid-area: menu;
+	grid-area: box2;
 	list-style-type: none;
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
@@ -190,7 +190,7 @@ body {
 
 /* #########  APPLY SECTION  ########## */
 .apply_section {
-	grid-area: apply_section;
+	grid-area: box3;
 	height: 450px;
 	background-image: url("pics/front_page/Europe-flags.jpg");
 	background-position: center;
@@ -229,7 +229,7 @@ body {
 
 /* #############  NEWS SECTION  ############## */
 .news-section {
-	grid-area: news-section;
+	grid-area: box4;
 	margin-top: 40px;
 	display: grid;
 	width: 1000px;
@@ -281,7 +281,9 @@ body {
 
 /* ##########  FOOTER  ######### */
 .footer {
-	grid-area: footer;
+	grid-area: box5;
+	margin-top: 20px;
+	background-color: black;
 	height: 200px;
 }
 
@@ -291,21 +293,21 @@ body {
 @media only screen and (max-width: 824px) {
 	/* ############ code for the title ###############*/
 
-	body {
+	/* body {
 		display: grid;
 		align-items: center;
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
 		grid-template-areas:
-		"title"
+		"box1"
 		"topnav"
 		"apply_section"
 		"news-section"
 		"footer";
-	}
+	} */
 /* #########  TITLE MOBILE  ######## */
 	.title {
-		grid-area: title;
+		/* grid-area: title; */
 		height: 140px;
 		position: relative;
 	}
@@ -358,7 +360,7 @@ body {
 		justify-content: left;
 	}
 	.topnav #mobile {
-		grid-area: topnav;
+		grid-area: box2;
 		position: relative;
 		background-color: #7fb3dd;
 		justify-content: center;
@@ -391,7 +393,7 @@ body {
 
 /* ############  NEWS MOBILE  ########## */
 	.news-section {
-		grid-area: news-section;
+		/* grid-area: box4; */
 		width: 95%;
 	}
 }
