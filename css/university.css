@@ -177,14 +177,6 @@ body {
 /* #                              MOBILE                               # */
 /* ##################################################################### */
 @media only screen and (max-width: 824px) {
-	.content {
-		width: 100%;
-	}
-	.text {
-		width: 100%;
-		padding: 5px;
-	}
-	.text h2 {
-		font-size: 20px;
-	}
+	
+
 }
