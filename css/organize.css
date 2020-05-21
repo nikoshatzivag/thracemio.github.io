@@ -44,20 +44,22 @@ body {
 /* ##################################################################### */
 /* #                              MOBILE                               # */
 /* ##################################################################### */
-/* @media only screen and (max-width: 824px) {
+@media only screen and (max-width: 824px) {
 	.content {
+		grid-area: box3;
 		width: 95%;
-		margin-left: 5px;
-		background-color: lightslategrey;
+	}
+	.pageTitle {
+		font-size: 30px;
 	}
 	.text {
 		width: 100%;
 		padding: 5px;
 	}
 	.text h2 {
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.text p {
-		font-size: 30px;
+		font-size: 20px;
 	}
-} */
+}
