@@ -78,6 +78,7 @@ body {
 	position: sticky;
 	top: 0;
 	background-color: #7fb3dd;
+	opacity: 0.9;
 	display: grid;
 	grid-auto-rows: 100px;
 	align-items: center;
