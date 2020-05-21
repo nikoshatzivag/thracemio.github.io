@@ -1,0 +1,65 @@
+/* ##################################################################### */
+/* #                            DESKTOP                                # */
+/* ##################################################################### */
+body {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"title"
+	"menu"
+	"topnav"
+	"content";
+}
+.content {
+	grid-area: content;
+	width: 1200px;
+	height: 1500px;
+	/* background-color: grey; */
+	justify-self: center;
+}
+
+.pageTitle {
+	font-size: 50px;
+	justify-self: center;
+	font-family: 'Times New Roman';
+	text-align: center;
+}
+
+.text {
+	font-family: 'Times New Roman';
+}
+
+.text h2 {
+	margin-top: 20px;
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+.text p {
+	margin-left: 20px;
+	font-size: 20px;
+	font-style: italic;
+	padding: 2px;
+}
+.text em {
+	font-weight: bold;
+	font-style: oblique
+}
+
+/* ##################################################################### */
+/* #                              MOBILE                               # */
+/* ##################################################################### */
+@media only screen and (max-width: 824px) {
+	.content {
+		width: 100%;
+	}
+	.text {
+		width: 100%;
+		padding: 5px;
+	}
+	.text h2 {
+		font-size: 20px;
+	}
+}
