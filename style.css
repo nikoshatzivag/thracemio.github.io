@@ -283,7 +283,7 @@ body {
 /* ##########  FOOTER  ######### */
 .footer {
 	grid-area: box5;
-	margin-top: 20px;
+	margin-top: 40px;
 	background-color: black;
 	height: 200px;
 }
