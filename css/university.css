@@ -50,8 +50,8 @@ body {
 .pic1 {
     grid-area: pic1;
     /* margin-top: 50px; */
-    width: 600px;
-    height: auto;
+    width: 100%;
+    height: 250px;
 }
 
 .text2 {
@@ -167,13 +167,120 @@ body {
 /* ##################################################################### */
 @media only screen and (max-width: 824px) {
 	.content {
+        grid-area: box3;
+		width: 95%;
+	}
+
+    .pageTitle {
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .part1 {
+        grid-template-columns: auto;
+        grid-template-rows: auto 10px auto;
+        grid-template-areas:
+        "pic1"
+        "."
+        "text1";
+    }
+
+    .text1 {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    
+    .pic1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .text2 {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .part3 {
+        grid-template-columns: auto;
+        grid-template-rows: auto 10px auto;
+        grid-template-areas:
+        "pic2"
+        "."
+        "text3";
+    }
+
+    .text3 {
+        margin-top: 0px;
+        font-size: 20px;
 		width: 100%;
-	}
-	.text {
+    }
+
+    .pic2 {
+        margin-top: 0;
+        width: 100%;
+        height: 200px;
+    }
+
+    .part4 {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "text4"
+        "text5";
+    }
+
+    .text4 {
+        margin-top: 0px;
+        font-size: 20px;
 		width: 100%;
-		padding: 5px;
-	}
-	.text h2 {
-		font-size: 10px;
-	}
+    }
+    .text5 {
+        margin-top: 0px;
+        font-size: 20px;
+		width: 100%;
+    }
+
+    .part5 {
+        grid-template-columns: auto;
+        grid-template-rows: auto 10px auto;
+        grid-template-areas:
+        "pic3"
+        "."
+        "text6";
+    }
+
+    .text6 {
+        margin-top: 0px;
+        font-size: 20px;
+		width: 100%;
+    }
+
+    .pic3 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .part6 {
+        grid-template-columns: auto;
+        grid-template-rows: auto 10px auto;
+        grid-template-areas:
+        "pic4"
+        "." 
+        "text7";
+    }
+
+    .text7 {
+        margin-top: 0px;
+        font-size: 20px;
+		width: 100%;
+    }
+
+    .pic4 {
+        width: 100%;
+        height: 200px;
+    }
+
 }
