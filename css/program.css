@@ -8,13 +8,12 @@ body {
 .content {
 	grid-area: box3;
 	width: 1200px;
-	height: 1500px;
-	/* background-color: rgb(226, 225, 225); */
+	height: fit-content;
 	justify-self: center;
 }
 
 .pageTitle {
-	margin-top: 20px;
+    margin-top: 20px;
 	font-size: 50px;
 	justify-self: center;
 	font-family: 'Times New Roman';
@@ -35,11 +34,11 @@ body {
 	margin-left: 20px;
 	font-size: 20px;
 	font-style: italic;
-	padding: 2px;
+	padding: 5px;
 }
 .text em {
 	font-weight: bold;
-	font-style: oblique
+	font-style: oblique;
 }
 
 /* ##################################################################### */

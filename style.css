@@ -133,11 +133,19 @@ body {
 .apply {
 	background-color: #7fb3dd;
 	color: black;
-	padding: 16px;
 	font-size: 16px;
 	border: none;
 }
-.sub3:hover .apply {color: #338dd5;}
+
+.apply a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+
+.sub3:hover .apply a {color: #338dd5;}
 .sub4 {
 	grid-area: sub4;
 	justify-self: center;
@@ -174,7 +182,15 @@ body {
 	font-size: 16px;
 	border: none;
 }
-.sub6:hover .contact {color: #338dd5;}
+
+.contact a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sub6:hover .contact a{color: #338dd5;}
 .sub7 {
 	grid-area: sub7;
 	justify-self: center;
@@ -186,7 +202,15 @@ body {
 	font-size: 16px;
 	border: none;
 }
-.sub7:hover .news {color: #338dd5;}
+
+.news a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sub7:hover .news a{color: #338dd5;}
 
 /* #########  APPLY SECTION  ########## */
 .apply_section {
