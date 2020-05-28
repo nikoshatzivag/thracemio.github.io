@@ -7,6 +7,7 @@ body {
 	align-items: center;
 	/* grid-template-rows: auto; */
 	grid-template-columns: auto;
+	background-color: #f1f1f1!important;
 	grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 	"box1"
@@ -78,7 +79,6 @@ body {
 	position: sticky;
 	top: 0;
 	background-color: #7fb3dd;
-	opacity: 0.9;
 	display: grid;
 	grid-auto-rows: 100px;
 	align-items: center;
@@ -134,11 +134,19 @@ body {
 .apply {
 	background-color: #7fb3dd;
 	color: black;
-	padding: 16px;
 	font-size: 16px;
 	border: none;
 }
-.sub3:hover .apply {color: #338dd5;}
+
+.apply a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+
+.sub3:hover .apply a {color: #338dd5;}
 .sub4 {
 	grid-area: sub4;
 	justify-self: center;
@@ -175,7 +183,15 @@ body {
 	font-size: 16px;
 	border: none;
 }
-.sub6:hover .contact {color: #338dd5;}
+
+.contact a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sub6:hover .contact a{color: #338dd5;}
 .sub7 {
 	grid-area: sub7;
 	justify-self: center;
@@ -187,7 +203,15 @@ body {
 	font-size: 16px;
 	border: none;
 }
-.sub7:hover .news {color: #338dd5;}
+
+.news a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sub7:hover .news a{color: #338dd5;}
 
 /* #########  APPLY SECTION  ########## */
 .apply_section {
@@ -230,19 +254,23 @@ body {
 
 /* #############  NEWS SECTION  ############## */
 .news-section {
+	background-color: #ffffff;
 	grid-area: box4;
 	margin-top: 40px;
 	display: grid;
-	width: 1000px;
+	width: 1200px;
 	justify-self: center;
-	grid-template-rows: auto auto 20px auto 20px auto;
+	grid-template-rows: 20px auto 100px 20px 100px 20px 100px 20px;
+	grid-template-columns: 30px auto 30px;
 	grid-template-areas:
-	"news-header"
-	"new1"
-	"."
-	"new2"
-	"."
-	"new3";
+	". . ."
+	". news-header ."
+	". new1 ."
+	". . ."
+	". new2 ."
+	". . ."
+	". new3 ."
+	". . .";
 }
 /* News text settings */
 .news-section h1 {
@@ -252,6 +280,7 @@ body {
 	color: #0D125C;
 	font-size: 30px;
 	font-family: sans-serif;
+	
 }
 .news-section h2 {
 	font-size: 30px;
@@ -264,26 +293,49 @@ body {
 	color: white;
 }
 /* Grid look of the latest 3 news */
+
 .news1 {
 	grid-area: new1;
+	position: center;
 	background-color: rgb(29, 134, 175);
-	height: 90px;
+	width: 97%;
 }
+
+.news1:hover {
+	width: 101%;
+	transition: ease;
+	transition-duration: 0.2s;
+}
+
 .news2 {
 	grid-area: new2;
 	background-color: rgb(29, 134, 175);
-	height: 90px;
+	width: 97%;
 }
+
+.news2:hover {
+	width: 101%;
+	transition: ease;
+	transition-duration: 0.2s;
+}
+
 .news3 {
 	grid-area: new3;
 	background-color: rgb(29, 134, 175);
-	height: 90px;
+	width: 97%;
+}
+
+.news3:hover {
+	width: 101%;
+	transition: ease;
+	transition-duration: 0.2s;
 }
 
 /* ##########  FOOTER  ######### */
 .footer {
+	margin-top: 50px;
+	margin-bottom: 0px;
 	grid-area: box5;
-	margin-top: 40px;
 	background-color: black;
 	height: 200px;
 }
@@ -395,6 +447,7 @@ body {
 /* ############  NEWS MOBILE  ########## */
 	.news-section {
 		/* grid-area: box4; */
+		grid-template-columns: 10px auto 10px;
 		width: 95%;
 	}
 }

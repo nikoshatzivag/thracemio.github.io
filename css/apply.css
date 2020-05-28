@@ -1,17 +1,14 @@
 /* ##################################################################### */
 /* #                            DESKTOP                                # */
 /* ##################################################################### */
-body {
-    background-color: rgb(232, 238, 247);
-}
 
 .content {
 	background-color: white;
 	grid-area: box3;
 	margin-top: 20px;
-	/* width: 1500px; */
 	width: 80%;
-	/* height: 1500px; */
+	padding: 50px;
+	height: fit-content;
 	/* background-color: rgb(226, 225, 225); */
 	justify-self: center;
 }
@@ -25,41 +22,53 @@ body {
 }
 
 .text {
-	/* margin: 10px; */
-	padding: 50px;
 	font-family: 'Times New Roman';
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: auto auto;
-	grid-template-areas: 
-	"title title"
-	"org scient";
-	/* justify-content: left; */
-}
-.org {
-	grid-area: org;
-}
-
-.scientific {
-	grid-area: scient;
 }
 
 .text h2 {
 	margin-top: 20px;
-	font-size: 25px;
-	color: rgb(15, 15, 15);
+	font-size: 30px;
 	margin-bottom: 20px;
 	text-decoration: underline;
 }
+
+.text a {
+    text-decoration: none;
+    color: #338dd5;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text a:hover {
+    /* font-size: 35px; */
+    color: #0D125C;
+    transition: ease;
+	transition-duration: 0.2s; 
+    /* text-decoration: underline; */
+}
+
 .text p {
-	/* margin-left: 20px; */
+	margin-left: 20px;
 	font-size: 20px;
 	font-style: italic;
-	padding: 2px;
+	padding: 10px;
 }
 .text em {
-	font-weight: bold;
-	font-style: oblique
+	/* font-weight: bold; */
+	font-style: oblique;
+}
+
+.text h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.text h4 {
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 /* ##################################################################### */
@@ -68,24 +77,23 @@ body {
 @media only screen and (max-width: 824px) {
 	.content {
 		grid-area: box3;
+		padding: 0px;
 		width: 95%;
 	}
 	.pageTitle {
-		font-size: 25px;
+		font-size: 30px;
 	}
 	.text {
 		width: 100%;
 		padding: 5px;
-		grid-template-columns: auto;
-		grid-template-areas: 
-		"title"
-		"org"
-		"scient";
 	}
 	.text h2 {
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.text p {
-		font-size: 15px;
-	}
+		font-size: 20px;
+    }
+    .text a {
+        font-size: 20px;
+    }
 }
