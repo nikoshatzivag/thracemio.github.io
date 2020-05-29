@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<div class="title">
+	<header class="title">
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
 		</a>
@@ -25,13 +25,13 @@
 				<h4>Model International Organizations</h4>
 			</div>
 		</a>
-	</div>
+	</header>
 
-	<div class="menu">
+	<menu class="menu">
 		<div class="sub1">
 			<button class="about">About</button>
 			<div class="dropdown-content">
-				<a href="organize.html">Organizing & scientific Committees</a>
+				<a href="organize.html">Organizing & Scientific Committees</a>
 				<a href="sponsors.html">Affiliations & sponsors</a>
 				<a href="university.html">Democritus University of Thrace</a>
 			</div>
@@ -73,20 +73,20 @@
 				<a href="news.html">News</a>
 			</button>
 		</div>
-	</div>
+	</menu>
 	<!-- MOBILE for the menu-->
 	<div class="topnav">
 		<div id="mobile">
 			<div class="sub1">
 				<ul class="about">About
-					<a href="organize.html">Organizing & scientific Committees</a>
+					<a href="organize.html">Organizing & Scientific Committees</a>
 					<a href="sponsors.html">Affiliations & sponsors</a>
 					<a href="university.html">Democritus University of Thrace</a>
 				</ul>
 			</div>
 			<div class="sub2">
 				<ul class="mio">Thracing on MIO 2020
-					<a href="programme.html">Programme</a>
+					<a href="program.html">Programme</a>
 					<a href="agenda.html">Committees & Board Members & Agenda</a>
 					<a href="secretariat.html">Secretariat</a>
 					<a href="staff.html">Crisis team & Press team & Administrative Staff</a>
@@ -112,11 +112,8 @@
 				<a class="news" href="news.html">News</a>
 			</div>
 		</div>
-		<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"></i>
-	</a> -->
 	</div>
-    <!-- END of the mobile version of the menu -->
+	<!-- END of the mobile version of the menu -->
     
     <main class="content shadow" id="main">
         <h1 class="pageTitle">Apply Form For Delegates</h1>
@@ -213,22 +210,12 @@
 
     </main>
 
-	<div class="footer"></div>
+	<footer></footer>
 
 
-	<!-- ####################################################################
+<!-- ####################################################################
 ***************************** SCRIPTS ******************************* -->
-	<script>
-		function myFunction() {
-			var x = document.getElementById("mobile");
-			if (x.style.display === "grid") {
-				x.style.display = "none";
-			}
-			else {
-				x.style.display = "grid";
-			}
-		}
-	</script>
+	<script src="../js/menu.js"></script>
 
 </body>
 

@@ -17,6 +17,17 @@ body {
 	"box5";
 }
 
+footer {
+	background-color: black;
+	height: 150px;
+	bottom: 0;
+	padding-top: 50px;
+	margin-top: 100px;
+	clear: both;
+}
+
+
+
 /* ############  Title  ############# */
 .title {
 	grid-area: box1;
@@ -79,6 +90,8 @@ body {
 	position: sticky;
 	top: 0;
 	background-color: #7fb3dd;
+	height: 100px;
+	opacity: 0.9;
 	display: grid;
 	grid-auto-rows: 100px;
 	align-items: center;
@@ -332,13 +345,14 @@ body {
 }
 
 /* ##########  FOOTER  ######### */
-.footer {
+/* .footer {
 	margin-top: 50px;
 	margin-bottom: 0px;
 	grid-area: box5;
 	background-color: black;
 	height: 200px;
-}
+} */
+
 
 /* ##################################################################### */
 /* #                              MOBILE                               # */
