@@ -3,27 +3,42 @@
 /* ##################################################################### */
 
 body {
-	display: grid;
-	align-items: center;
+	/* display: grid; */
+	/* align-items: center; */
+	position: relative;
+	/* padding-bottom: 150px; */
+	min-height: 100vh;
 	/* grid-template-rows: auto; */
-	grid-template-columns: auto;
+	/* grid-template-columns: auto; */
 	background-color: #f1f1f1!important;
-	grid-template-rows: auto auto auto auto;
+	padding-bottom: 130px;
+	/* grid-template-rows: auto auto auto auto;
 	grid-template-areas:
 	"box1"
 	"box2"
 	"box3"
 	"box4"
-	"box5";
+	"box5"; */
 }
 
 footer {
-	background-color: black;
-	height: 150px;
+	display: block;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+	/* padding-top: 20px; */
+	position: absolute;
 	bottom: 0;
-	padding-top: 50px;
-	margin-top: 100px;
-	clear: both;
+	height: 130px;
+	/* margin-top: -120px; */
+	width: 100%;
+}
+
+main {
+	/* position: relative; */
+	width: 80%;
+	margin: 20px auto;
+	padding: 30px 20px;
 }
 
 
@@ -114,6 +129,7 @@ footer {
 	display: none;
 	position: absolute;
 	background-color: #f1f1f1;
+	opacity: 1;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -269,7 +285,8 @@ footer {
 .news-section {
 	background-color: #ffffff;
 	grid-area: box4;
-	margin-top: 40px;
+	/* margin-top: 40px; */
+	margin: 40px auto;
 	display: grid;
 	width: 1200px;
 	justify-self: center;
@@ -358,20 +375,6 @@ footer {
 /* #                              MOBILE                               # */
 /* ##################################################################### */
 @media only screen and (max-width: 824px) {
-	/* ############ code for the title ###############*/
-
-	/* body {
-		display: grid;
-		align-items: center;
-		grid-template-columns: 100%;
-		grid-template-rows: auto;
-		grid-template-areas:
-		"box1"
-		"topnav"
-		"apply_section"
-		"news-section"
-		"footer";
-	} */
 /* #########  TITLE MOBILE  ######## */
 	.title {
 		/* grid-area: title; */
