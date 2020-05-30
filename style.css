@@ -174,7 +174,6 @@ main {
 	display: block;
 }
 
-
 .sub3:hover .apply a {color: #338dd5;}
 .sub4 {
 	grid-area: sub4;
@@ -187,7 +186,18 @@ main {
 	font-size: 16px;
 	border: none;
 }
-.sub4:hover .message {color: #338dd5;}
+
+.message a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sub4:hover .message {
+	color: #338dd5;
+	cursor: pointer;
+}
 .sub5 {
 	grid-area: sub5;
 	justify-self: center;

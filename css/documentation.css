@@ -1,0 +1,158 @@
+/* ##################################################################### */
+/* #                            DESKTOP                                # */
+/* ##################################################################### */
+
+.footer {
+    bottom: 0;
+    position: fixed;
+}
+
+.content {
+	background-color: white;
+	grid-area: box3;
+	margin-top: 20px;
+	width: 80%;
+	padding: 50px;
+	height: fit-content;
+	/* background-color: rgb(226, 225, 225); */
+	justify-self: center;
+}
+
+.pageTitle {
+	margin-top: 20px;
+	font-size: 50px;
+	justify-self: center;
+	font-family: 'Times New Roman';
+	text-align: center;
+}
+
+.general {
+	margin-bottom: 30px;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto;
+	grid-template-areas: 
+	"left right";
+}
+
+.left {
+	grid-area: left;
+}
+
+.right {
+	grid-area: right;
+}
+
+.commitees {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto;
+	grid-template-areas: 
+	"left2 right2";
+}
+
+.left2 {
+	grid-area: left2;
+}
+
+.right2 {
+	grid-area: right2;
+}
+
+.text {
+	font-family: 'Times New Roman';
+}
+
+.text h2 {
+	margin-top: 20px;
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+.text a {
+    text-decoration: none;
+    color: #338dd5;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text a:hover {
+    /* font-size: 35px; */
+    color: #0D125C;
+    transition: ease;
+	transition-duration: 0.2s; 
+    /* text-decoration: underline; */
+}
+
+.text p {
+	margin-left: 20px;
+	font-size: 20px;
+	/* font-style: italic; */
+	padding: 10px;
+}
+.text em {
+	/* font-weight: bold; */
+	font-style: oblique;
+}
+
+.text h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.text h4 {
+	font-size: 25px;
+	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* ##################################################################### */
+/* #                              MOBILE                               # */
+/* ##################################################################### */
+@media only screen and (max-width: 824px) {
+	.content {
+		grid-area: box3;
+		padding: 0px;
+		width: 95%;
+	}
+	.pageTitle {
+		font-size: 30px;
+	}
+	.general {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"left"
+		"right";
+	}
+	.commitees {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"left2"
+		"right2";
+	}
+	.text {
+		width: 100%;
+		padding: 5px;
+	}
+	.text h2 {
+		font-size: 25px;
+	}
+	.text h4 {
+		font-size: 20px;
+	}
+	.text h3 {
+		font-size: 20px;
+	}
+	.text p {
+		font-size: 20px;
+    }
+    .text a {
+        font-size: 20px;
+    }
+}
