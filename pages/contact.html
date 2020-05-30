@@ -116,7 +116,20 @@
 	<!-- END of the mobile version of the menu -->
     
     <main class="content shadow" id="main">
-        <h1 class="pageTitle">Contact us</h1>
+		<h1 class="pageTitle">Contact us</h1>
+		
+		<div class="contact_form">
+			<form id="contact_form" method="post" action="contactFormHandler.php">
+				<input type="text" name="name" class="form_control" placeholder="Full Name" required><br>
+	
+				<input type="text" name="email" class="form_control" placeholder="Email" required><br>
+	
+				<textarea name="message" class="form_control" placeholder="Text" rows="5" required></textarea><br>
+	
+				<input type="submit" name="" class="form_control submit" value="SEND">
+			</form>
+		</div>
+
     </main>
 
 	<footer></footer>
