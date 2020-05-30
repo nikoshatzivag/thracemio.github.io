@@ -22,7 +22,11 @@ body {
 }
 
 .text {
-	padding: 50px;
+	/* margin-top: 40px; */
+	/* margin-left: 10%; */
+	/* margin-right: 10%; */
+	margin: 40px 10% 30px 10%; /* Top | Right | Bottom | left */
+	/* padding: 50px; */
 	font-family: 'Times New Roman';
 	display: grid;
 	grid-template-rows: auto;
@@ -63,13 +67,16 @@ body {
 	.content {
 		grid-area: box3;
 		width: 95%;
+		padding: 0;
+		padding-top: 10px;
 	}
 	.pageTitle {
 		font-size: 25px;
 	}
 	.text {
-		width: 100%;
-		padding: 5px;
+		/* width: 95%; */
+		/* padding: 10px; */
+		margin: 4%;
 		grid-template-columns: auto;
 		grid-template-areas: 
 		"title"
