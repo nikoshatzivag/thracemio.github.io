@@ -178,7 +178,10 @@ footer {
 	display: block;
 }
 
-.sub4:hover .message a{color: #338dd5;}
+.sub4:hover .message {
+	color: #338dd5;
+	cursor: pointer;
+}
 .sub5 {
 	grid-area: sub5;
 	justify-self: center;
