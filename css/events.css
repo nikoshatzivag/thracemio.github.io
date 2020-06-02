@@ -1,52 +1,17 @@
 /* ##################################################################### */
 /* #                            DESKTOP                                # */
 /* ##################################################################### */
-body {
-    background-color: rgb(232, 238, 247);
-}
 
 .content {
 	grid-area: box3;
 	background-color: white;
 	margin-top: 40px;
-	/* width: 1200px; */
 	width: 80%;
 	padding: 50px;
 	height: fit-content;
 	justify-self: center;
 }
 
-.pageTitle {
-    margin-top: 20px;
-	font-size: 50px;
-	justify-self: center;
-	font-family: 'Times New Roman';
-	text-align: center;
-}
-
-.text {
-	font-family: 'Times New Roman';
-	margin-top: 30px;
-	margin-left: 15%;
-	/* justify-self: center; */
-}
-
-.text h2 {
-	margin-top: 20px;
-	font-size: 30px;
-	margin-bottom: 20px;
-	text-decoration: underline;
-}
-.text p {
-	margin-left: 20px;
-	font-size: 20px;
-	font-style: italic;
-	padding: 5px;
-}
-.text em {
-	font-weight: bold;
-	font-style: oblique;
-}
 
 /* ##################################################################### */
 /* #                              MOBILE                               # */
@@ -54,21 +19,7 @@ body {
 @media only screen and (max-width: 824px) {
 	.content {
 		grid-area: box3;
-		padding: 0px;
+		padding: 20px 0px;
 		width: 95%;
-	}
-	.pageTitle {
-		font-size: 30px;
-	}
-	.text {
-		margin-left: 5px;
-		width: 95%;
-		padding: 5px;
-	}
-	.text h2 {
-		font-size: 25px;
-	}
-	.text p {
-		font-size: 20px;
 	}
 }
