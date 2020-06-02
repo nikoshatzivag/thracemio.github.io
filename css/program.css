@@ -24,11 +24,16 @@ body {
 	text-align: center;
 }
 
-.text {
+.text h2 {
+	text-align: left;
+}
+
+
+/* .text {
 	font-family: 'Times New Roman';
 	margin-top: 30px;
 	margin-left: 15%;
-	/* justify-self: center; */
+	justify-self: center;
 }
 
 .text h2 {
@@ -46,7 +51,7 @@ body {
 .text em {
 	font-weight: bold;
 	font-style: oblique;
-}
+} */
 
 /* ##################################################################### */
 /* #                              MOBILE                               # */
