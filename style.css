@@ -194,7 +194,7 @@ main {
 	display: block;
 }
 
-.sub4:hover .message {
+.sub4:hover .message a{
 	color: #338dd5;
 	cursor: pointer;
 }
