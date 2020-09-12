@@ -20,7 +20,6 @@
 } */
 
 .pageTitle {
-	/* margin-top: 20px; */
 	font-size: 50px;
 	justify-self: center;
 	font-family: 'Times New Roman';
@@ -34,137 +33,22 @@
 	text-decoration: underline;
 }
 
-.part1 {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 30px 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"pic1 . text1";
-}
-
-.text1 {
-    margin-top: 10px;
-    grid-area: text1;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    /* padding: 10px; */
+.text1, .text2, .text3, .text4{
+    font-size: 20px;
     text-align: justify;
+    font-family: "Roboto", sans-serif;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-
-.pic1 {
-    grid-area: pic1;
-    /* margin-top: 50px; */
-    width: 70%;
-    height: 300px;
-}
-
-.text2 {
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    text-align: justify;
-}
-
-.part3 {
-    display: grid;
-    grid-template-columns: 1fr 30px 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"text3 . pic2";
-}
-
-.text3 {
-    grid-area: text3;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    /* padding: 10px; */
-    text-align: left;
-}
-
-
-.pic2 {
-    margin-top: 30px;
-    grid-area: pic2;
-    /* margin-top: 50px; */
-    width: 600px;
-    height: auto;
-}
-
-.part4 {
-    display: grid;
-    grid-template-columns: 1fr 30px 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"text4 . text5";
-}
-
-.text4 {
-    grid-area: text4;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    /* padding: 10px; */
-    text-align: left;
-}
-
-.text5 {
-    grid-area: text5;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    /* padding: 10px; */
-    text-align: left;
-}
-
-.part5 {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 30px 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"pic3 . text6";
-}
-
-.text6 {
-    margin-top: 80px;
-    grid-area: text6;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    /* padding: 10px; */
-    text-align: justify;
-}
-
-
-.pic3 {
-    grid-area: pic3;
-    /* margin-top: 50px; */
-    width: 600px;
-    height: auto;
-}
-
-.part6 {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 30px 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"text7 . pic4";
-}
-
-.text7 {
-    margin-top: 80px;
-    grid-area: text7;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    /* padding: 10px; */
-    text-align: justify;
-}
-
-
-.pic4 {
-    grid-area: pic4;
-    /* margin-top: 50px; */
-    width: 600px;
-    height: auto;
+.pic1, .pic2, .pic3, .pic4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 /* ##################################################################### */
@@ -187,114 +71,13 @@
         font-size: 20px;
     }
 
-    .part1 {
-        padding: 5px;
-        grid-template-columns: auto;
-        grid-template-rows: auto 10px auto;
-        grid-template-areas:
-        "pic1"
-        "."
-        "text1";
-    }
-
-    .text1 {
-        margin-top: 0px;
+    .text1, .text2, .text3, .text4{
+        padding: 10px;
         font-size: 15px;
     }
     
-    .pic1 {
-        width: 100%;
+    .pic1, .pic2, .pic3, .pic4 {
+        width: 97%;
         height: auto;
     }
-
-    .text2 {
-        padding: 5px;
-        margin-top: 0px;
-        font-size: 15px;
-    }
-
-    .part3 {
-        padding: 5px;
-        grid-template-columns: auto;
-        grid-template-rows: auto 10px auto;
-        grid-template-areas:
-        "pic2"
-        "."
-        "text3";
-    }
-
-    .text3 {
-        margin-top: 0px;
-        font-size: 15px;
-		width: 100%;
-    }
-
-    .pic2 {
-        margin-top: 0;
-        width: 100%;
-        height: 200px;
-    }
-
-    .part4 {
-        padding: 5px;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "text4"
-        "text5";
-    }
-
-    .text4 {
-        margin-top: 0px;
-        font-size: 15px;
-		width: 100%;
-    }
-    .text5 {
-        margin-top: 0px;
-        font-size: 15px;
-		width: 100%;
-    }
-
-    .part5 {
-        padding: 5px;
-        grid-template-columns: auto;
-        grid-template-rows: auto 10px auto;
-        grid-template-areas:
-        "pic3"
-        "."
-        "text6";
-    }
-
-    .text6 {
-        margin-top: 0px;
-        font-size: 15px;
-		width: 100%;
-    }
-
-    .pic3 {
-        width: 100%;
-        height: 200px;
-    }
-
-    .part6 {
-        padding: 5px;
-        grid-template-columns: auto;
-        grid-template-rows: auto 10px auto;
-        grid-template-areas:
-        "pic4"
-        "." 
-        "text7";
-    }
-
-    .text7 {
-        margin-top: 0px;
-        font-size: 15px;
-		width: 100%;
-    }
-
-    .pic4 {
-        width: 100%;
-        height: 200px;
-    }
-
 }
