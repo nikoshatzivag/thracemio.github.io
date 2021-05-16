@@ -8,7 +8,7 @@ document.write("<a href=\"..\/university\/university.html\">Democritus Universit
 document.write("<\/div>");
 document.write("<\/div>");
 document.write("<div class=\"sub2\">");
-document.write("<button class=\"mio\">Thracing on MIO 2020<\/button>");
+document.write("<button class=\"mio\">Thracing on MIO 2021<\/button>");
 document.write("<div class=\"dropdown-content\">");
 document.write("<a href=\"..\/program\/program.html\">Programme<\/a>");
 document.write("<a href=\"..\/agenda\/agenda.html\">Committees & Board Members & Agenda<\/a>");
@@ -59,7 +59,7 @@ document.write("<a href=\"..\/university\/university.html\">Democritus Universit
 document.write("<\/ul>");
 document.write("<\/div>");
 document.write("<div class=\"sub2\">");
-document.write("<ul class=\"mio\">Thracing on MIO 2020");
+document.write("<ul class=\"mio\">Thracing on MIO 2021");
 document.write("<a href=\"..\/program\/program.html\">Programme<\/a>");
 document.write("<a href=\"..\/agenda\/agenda.html\">Committees & Board Members & Agenda<\/a>");
 document.write("<a href=\"..\/secretariat\/secretariat.html\">Secretariat<\/a>");
