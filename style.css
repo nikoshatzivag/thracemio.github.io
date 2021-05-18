@@ -86,7 +86,7 @@ main {
 
 .titleText h4 {
     font-size: 35px;
-    color: #01090A;
+    color: #B93117;
     font-family: 'Times New Roman';
 }
 
@@ -152,6 +152,7 @@ main {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: "Roboto", sans-serif;
 }
 
 .dropdown-content a:hover {
@@ -333,7 +334,7 @@ main {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.788);
     color: #00232B;
-    font-family: sans-serif;
+    font-family: "Roboto";
     border-radius: 25px;
     display: inline-block;
 }
@@ -370,18 +371,18 @@ main {
     margin-bottom: 20px;
     color: #00232B;
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: "Roboto";
 }
 
 .news-section h2 {
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: "Roboto";
     color: white;
 }
 
 .news-section p {
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: "Roboto";
     color: white;
 }
 
@@ -428,14 +429,41 @@ main {
 
 /* ##########  FOOTER  ######### */
 
+footer {
+    /* margin-top: 2200px; */
+    margin-bottom: 0px;
+    grid-area: footer;
+    background-color: black;
+    height: 130px;
+}
 
-/* .footer {
-	margin-top: 50px;
-	margin-bottom: 0px;
-	grid-area: box5;
-	background-color: black;
-	height: 200px;
-} */
+.flogo {
+    margin-top: 10px;
+    /* margin-left: 40px; */
+    text-align: center;
+}
+
+.footerText {
+    color: white;
+    /* text-align: left; */
+    padding-left: 70px;
+    font-size: 30px;
+    font-weight: 100;
+    background-image: url(logos/logo1000_white.png);
+    display: none;
+}
+
+.footerLogo {
+    width: 80px;
+    color: white;
+    padding-left: 30px;
+}
+
+.copy p {
+    color: #eeeeee;
+    font-size: 15px;
+    text-align: center;
+}
 
 
 /* ##################################################################### */
@@ -454,9 +482,9 @@ main {
         position: relative;
     }
     .titleLogo {
-        margin-top: 40px;
-        margin-left: 5px;
-        width: 90px;
+        margin-top: 25px;
+        /* margin-left: 5px; */
+        width: 100px;
         justify-self: end;
     }
     .titleText {
@@ -465,7 +493,7 @@ main {
         justify-self: start1;
     }
     .titleText h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .titleText h4 {
         font-size: 14px;
@@ -478,7 +506,7 @@ main {
         display: none;
     }
     .topnav #mobile a {
-        color: black;
+        color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
@@ -489,7 +517,7 @@ main {
     .icon {
         padding: 14px 16px;
         color: white;
-        background: #338dd5;
+        background: #16A4CC;
         display: block;
         position: absolute;
         right: 0;
@@ -504,7 +532,7 @@ main {
     .topnav #mobile {
         grid-area: box2;
         position: relative;
-        background-color: #7fb3dd;
+        background-color: #16A4CC;
         justify-content: center;
         grid-template-rows: 5px;
         grid-template-columns: 300px;

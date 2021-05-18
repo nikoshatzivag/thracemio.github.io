@@ -1,0 +1,10 @@
+// document.write('    <footer>\n');
+document.write('        <div class=\"flogo\">\n');
+document.write('            <img src=\"..\/logos\/logo1000_white.png\" alt=\"logo\" class=\"footerLogo\">\n');
+document.write('            <h1 class=\"footerText\">Thracing On MIC</h1>\n');
+document.write('        </div>\n');
+document.write("<div class=\"copy\">");
+document.write("                <p>Copyright &copy; Thracing On MIC-Model International Crises");
+document.write("            <\/div>");
+document.write("<\/div>");
+// document.write('    </footer>');
