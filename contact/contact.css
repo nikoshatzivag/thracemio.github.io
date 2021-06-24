@@ -1,42 +1,45 @@
 /* ##################################################################### */
+
+
 /* #                            DESKTOP                                # */
+
+
 /* ##################################################################### */
 
 .content {
-	background-color: white;
-	grid-area: box3;
-	margin-top: 20px;
-	width: 80%;
-	padding: 50px;
-	height: fit-content;
-	justify-self: center;
+    background-color: white;
+    grid-area: box3;
+    margin-top: 20px;
+    width: 80%;
+    padding: 50px;
+    height: fit-content;
+    justify-self: center;
 }
 
 .pageTitle {
-	margin-top: 20px;
-	font-size: 50px;
-	justify-self: center;
-	font-family: 'Times New Roman';
-	text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    justify-self: center;
+    font-family: 'Times New Roman';
+    text-align: center;
 }
 
 .contact_form {
-	justify-self: center;
-	text-align: center;
-	margin-top: 30px;
-	font-family: 'Times New Roman';
+    justify-self: center;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Times New Roman';
 }
 
-
 .form_control {
-	margin-top: 20px;
+    margin-top: 20px;
     width: 800px;
     background: transparent;
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
     color: black;
-	font-size: 25px;
+    font-size: 25px;
 }
 
 form .submit {
@@ -45,9 +48,8 @@ form .submit {
     font-size: 35px;
     font-weight: bold;
     letter-spacing: 3px;
-	margin-top: 20px;
+    margin-top: 20px;
 }
-
 
 form .submit:hover {
     cursor: pointer;
@@ -57,29 +59,94 @@ input {
     height: 45px;
 }
 
+
+/* Style all font awesome icons */
+
+.social_links {
+    margin-top: 30px;
+    font-family: roboto;
+    margin-left: 200px;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.social_links a:hover {
+    color: #19ADCF;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #DA2595;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-envelope {
+    background: #B93117;
+    color: white;
+}
+
+
 /* ##################################################################### */
+
+
 /* #                              MOBILE                               # */
+
+
 /* ##################################################################### */
+
 @media only screen and (max-width: 824px) {
-	.content {
-		grid-area: box3;
-		padding: 0px;
-		width: 95%;
-	}
-	.pageTitle {
-		font-size: 30px;
-	}
-
-	.contact_form {
-		margin-top: 10px;
-	}
-
-	.form_control {
-		margin-top: 10px;
-		width: 95%;
-		font-size: 20px;
-	}
-	.submit {
-		font-size: 25px;
-	}
+    .content {
+        grid-area: box3;
+        padding: 0px;
+        width: 95%;
+    }
+    .pageTitle {
+        font-size: 30px;
+    }
+    .contact_form {
+        margin-top: 10px;
+    }
+    .form_control {
+        margin-top: 10px;
+        width: 95%;
+        font-size: 20px;
+    }
+    .submit {
+        font-size: 25px;
+    }
 }
