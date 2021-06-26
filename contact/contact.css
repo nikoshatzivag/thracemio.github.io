@@ -68,7 +68,8 @@ input {
     margin-left: 200px;
 }
 
-.social_links a {
+.social_links a,
+p {
     text-decoration: none;
     color: black;
     font-size: 30px;
@@ -148,5 +149,16 @@ input {
     }
     .submit {
         font-size: 25px;
+    }
+    .social_links a {
+        font-size: 20px;
+    }
+    .social_links {
+        margin-top: 30px;
+        font-family: roboto;
+        margin-left: 15px;
+    }
+    .fa {
+        width: 20px;
     }
 }

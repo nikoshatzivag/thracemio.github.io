@@ -121,7 +121,7 @@ main {
     grid-auto-rows: 100px;
     align-items: center;
     grid-template-columns: auto;
-    grid-template-areas: ". sub1 . sub2 . sub3 . sub4 . sub5 . sub6 . sub7 .";
+    grid-template-areas: ". sub1 . sub2 . sub3 . sub5 . sub6 . sub7 .";
 }
 
 .sub1 {
@@ -544,7 +544,6 @@ footer {
     .sub1,
     .sub2,
     .sub3,
-    .sub4,
     .sub5,
     .sub6,
     .sub7 {

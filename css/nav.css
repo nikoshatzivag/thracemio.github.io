@@ -1,110 +1,124 @@
 body {
-	display: grid;
-	align-items: center;
-	grid-template-columns: 100%;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"title"
-	"topnav"
-	"content"
-	"apply_section"
-	"news-section"
-	"footer";
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "title" "topnav" "content" "apply_section" "news-section" "footer";
 }
+
+
 /* #########  TITLE MOBILE  ######## */
+
 .title {
-	grid-area: title;
-	height: 140px;
-	position: relative;
+    grid-area: title;
+    height: 140px;
+    position: relative;
 }
+
 .titleLogo {
-	margin-top: 40px;
-	margin-left: 5px;
-	width: 90px;
-	justify-self: end;
+    margin-top: 40px;
+    margin-left: 5px;
+    width: 90px;
+    justify-self: end;
 }
+
 .titleText {
-	margin-top: 60px;
-	margin-right: 5px;
-	justify-self: start1;
+    margin-top: 60px;
+    margin-right: 5px;
+    justify-self: start1;
 }
+
 .titleText h1 {
-	font-size: 30px;
+    font-size: 30px;
 }
+
 .titleText h4 {
-	font-size: 14px;
+    font-size: 14px;
 }
+
+
 /* #########  TOPNAV MOBILE  ######## */
+
 .topnav {
-	display: block;
+    display: block;
 }
+
 .topnav #mobile {
-	display: none;
+    display: none;
 }
+
 .topnav #mobile a {
-	color: black;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: block;
-	/* position: relative; */
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    /* position: relative; */
 }
+
+
 /* Style the hamburger menu */
+
 .topnav a.icon {
-	padding: 14px 16px;
-	color: white;
-	background: #338dd5;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
+    padding: 14px 16px;
+    color: white;
+    background: #338dd5;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
+
 .menu {
-	display: none;
+    display: none;
 }
+
 .topnav {
-	justify-content: left;
+    justify-content: left;
 }
+
 .topnav #mobile {
-	grid-area: topnav;
-	position: relative;
-	background-color: #7fb3dd;
-	justify-content: center;
-	grid-template-rows: 5px;
-	grid-template-columns: 300px;
-	grid-template-areas:
-	"."
-	"sub1"
-	"sub2"
-	"sub3"
-	"sub4"
-	"sub5"
-	"sub6"
-	"sub7"
-	".";
+    grid-area: topnav;
+    position: relative;
+    background-color: #7fb3dd;
+    justify-content: center;
+    grid-template-rows: 5px;
+    grid-template-columns: 300px;
+    grid-template-areas: "." "sub1" "sub2" "sub3" "sub5" "sub6" "sub7" ".";
 }
+
 #mobile {
-	justify-items: left;
+    justify-items: left;
 }
-.sub1, .sub2, .sub3, .sub4, .sub5, .sub6, .sub7 {
-	justify-self: left;
-	justify-content: start;
+
+.sub1,
+.sub2,
+.sub3,
+.sub5,
+.sub6,
+.sub7 {
+    justify-self: left;
+    justify-content: start;
 }
+
 
 /* organize */
 
 .content {
-	width: 95%;
-	margin-left: 5px;
-	background-color: lightslategrey;
+    width: 95%;
+    margin-left: 5px;
+    background-color: lightslategrey;
 }
+
 .text {
-	width: 100%;
-	padding: 5px;
+    width: 100%;
+    padding: 5px;
 }
+
 .text h2 {
-	font-size: 20px;
+    font-size: 20px;
 }
+
 .text p {
-	font-size: 30px;
+    font-size: 30px;
 }
