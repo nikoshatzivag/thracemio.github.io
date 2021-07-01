@@ -10,7 +10,9 @@
 	justify-self: center;
 }
 .text {
-	margin-left: 0;
+	margin-left: 10%;
+	width: 75%;
+	line-height: 1.4;
 }
 
 /* .pageTitle {
