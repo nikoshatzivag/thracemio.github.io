@@ -426,6 +426,9 @@ main {
     transition-duration: 0.2s;
 }
 
+.content {
+    line-height: 1.2;
+}
 
 /* ##########  FOOTER  ######### */
 
